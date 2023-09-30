@@ -1,1 +1,7 @@
 My config of suckess dwm.
+
+Installation steps:
+git clone https://github.com/ballkicker228/dwm-config
+cd dwm-config
+mv autostart ~/.dwm
+sudo make clean install
