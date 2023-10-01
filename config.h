@@ -9,9 +9,9 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=11" };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222"; //222222
-static const char col_gray2[]       = "#000000";
-static const char col_gray3[]       = "#000000"; //bbbbbb
-static const char col_gray4[]       = "#000000";
+static const char col_gray2[]       = "#222222";
+static const char col_gray3[]       = "#ffffff"; //bbbbbb
+static const char col_gray4[]       = "#222222";
 static const char col_cyan[]        = "#ff0004";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
