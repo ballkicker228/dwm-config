@@ -1,6 +1,6 @@
 # My config of suckless dwm.
 
-![Screenshot](https://raw.githubusercontent.com/ballkicker228/dwm-config/screen.jpg)
+![Screenshot](https://github.com/ballkicker228/dwm-config/blob/main/screen.jpg?raw=true)
 
 Installation steps:
 git clone https://github.com/ballkicker228/dwm-config
