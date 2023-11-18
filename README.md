@@ -2,8 +2,8 @@
 
 ![Screenshot](https://github.com/ballkicker228/dwm-config/blob/main/screen.jpg?raw=true)
 
-Installation steps:
-```git clone https://github.com/ballkicker228/dwm-config```
-```cd dwm-config```
-```mv autostart ~/.dwm```
-```sudo make clean install```
+Installation steps:<br>
+```git clone https://github.com/ballkicker228/dwm-config```<br>
+```cd dwm-config```<br>
+```mv autostart ~/.dwm```<br>
+```sudo make clean install```<br>
