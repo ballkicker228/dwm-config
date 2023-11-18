@@ -5,14 +5,14 @@ static const unsigned int gappx = 5;
 static const unsigned int borderpx = 1; /* border pixel of windows */
 static const unsigned int snap = 32;    /* snap pixel */
 static const int showbar = 1;           /* 0 means no bar */
-static const int topbar = 1;            /* 0 means bottom bar */
-static const char *fonts[] = {"monospace:size=11"};
-static const char dmenufont[] = "monospace:size=10";
-static const char col_gray1[] = "#222222"; // 222222
+static const int topbar = 0;            /* 0 means bottom bar */
+static const char *fonts[] = {"iosevka:size=11"};
+static const char dmenufont[] = "iosevka:size=10";
+static const char col_gray1[] = "#0f1217"; // 222222
 static const char col_gray2[] = "#222222";
 static const char col_gray3[] = "#ffffff"; // bbbbbb
-static const char col_gray4[] = "#222222";
-static const char col_cyan[] = "#ff0004";
+static const char col_gray4[] = "#ffffff";
+static const char col_cyan[] = "#5657f5";
 static const char *colors[][3] = {
     /*               fg         bg         border   */
     [SchemeNorm] = {col_gray3, col_gray1, col_gray2},
@@ -30,7 +30,8 @@ static const Rule rules[] = {
      */
     /* class      instance    title       tags mask     isfloating   monitor */
     {"Gimp", NULL, NULL, 0, 1, -1},
-    {"Firefox", NULL, NULL, 1 << 8, 0, -1},
+    {"LibreWolf", NULL, NULL, 1 << 8, 0, -1},
+    {"TelegramDesktop", NULL, NULL, 1 << 7, 1, -1},
 };
 
 /* layout(s) */
@@ -84,9 +85,11 @@ static const char *volmutecmd[] = {
 static const char *telegram[] = {"telegram-desktop", NULL};
 static const char *flameshot[] = {"flameshot", "gui", NULL};
 static const char *steam[] = {"steam", NULL};
+static const char *pcmanfm[] = {"pcmanfm", NULL};
 
 static const Key keys[] = {
     /* modifier                     key        function        argument */
+    {MODKEY | ShiftMask, XK_f, spawn, {.v = pcmanfm}},
     {MODKEY | ShiftMask, XK_s, spawn, {.v = steam}},
     {0, XK_Print, spawn, {.v = flameshot}},
     {MODKEY | ShiftMask, XK_t, spawn, {.v = telegram}},
